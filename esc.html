@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Multiview</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-input">
+            <input type="text" placeholder="Enter YouTube video URL" id="video-url">
+            <button id="add-video-btn">Add Video</button>
+        </div>
+
+        <div class="video-controls">
+            <div class="control-group">
+                <label for="video-duration">Video Duration:</label>
+                <input type="number" placeholder="Duration" id="video-duration">
+                <label for="duration-sec">Seconds</label>
+                <input type="radio" id="duration-sec" name="duration-unit" value="sec" checked>
+                <label for="duration-min">Minutes</label>
+                <input type="radio" id="duration-min" name="duration-unit" value="min">
+            </div>
+
+            <div class="control-group">
+              <abbr title="Number of Windows">NOW : </abbr>
+                <input type="number" placeholder="Number of Windows" id="num-windows">
+            </div>
+        </div>
+
+        <div class="video-grid">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
